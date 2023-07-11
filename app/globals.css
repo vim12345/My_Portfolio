@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Dongle&family=Duru+Sans&family=Kanit:wght@100&family=Lato:ital,wght@0,300;0,700;1,100&family=Montserrat:wght@200;600&family=Poppins:ital,wght@0,100;0,400;0,500;1,500&family=Roboto+Mono:wght@200;400&family=Roboto:wght@500;900&family=Rubik:wght@500;800&display=swap');
+
+body{
+  background: rgb(255, 255, 255);
+  cursor: none;
+}
+.cursor{
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  pointer-events: none;
+  z-index: 999999999;
+}
+
+@media screen and (min-width:80rem) {
+  .pseudo::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #000;
+    top: 0;
+    display: block;
+    right: 0;
+  }
+  
+}
